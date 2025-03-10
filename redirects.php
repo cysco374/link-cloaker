@@ -8,13 +8,13 @@
  * @package link-cloaker
  */
 
-$myhomepage = 'https://your-homepage.com'; //Your Startpage
+$myhomepage = 'https://claimads.netlify.app'; //Your Startpage
 
 $affid = htmlspecialchars($_GET["affid"]); //Do not changing
 
 $affLinkList = array( //Insert here the links do you want mask
-"affiliatelink1" => "https://www.example.com",
-"affiliatelink2" => "https://www.test.com"
+"affiliatelink1" => "https://www.detik.com",
+"affiliatelink2" => "https://www.kumparan.com"
 );
 
 $link = array_key_exists($affid, $affLinkList) === false ? $myhomepage : $affLinkList[$affid]; //Checks if the Link exists if not then redirect to your Homepage
